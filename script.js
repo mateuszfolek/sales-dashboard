@@ -11,6 +11,8 @@ const procentageValues = [
     -2,
     5
 ]
+// to be fixed ^
+
 
 
 
@@ -18,6 +20,7 @@ document.getElementById("revenue").innerHTML = "$" + values[0];
 document.getElementById("growth-revenue").innerHTML = "+" +  procentageValues[0] + "%";
 
 document.getElementById("growth-revenue").innerHTML = ((procentageValues[0] - values[0])) / procentageValues[0] + "%";
+// to be fixed ^
 
 
 
@@ -31,6 +34,3 @@ document.getElementById("decrease-clients").innerHTML = procentageValues[2] + "%
 
 document.getElementById("sales").innerHTML = "$" + values[3];   
 document.getElementById("growth-sales").innerHTML = "+" +  procentageValues[3] + "%";
-
-
-random = ;

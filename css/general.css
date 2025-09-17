@@ -1,7 +1,3 @@
-:root {
-    --random:value;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -25,8 +21,8 @@ html body {
 
 main {
     display: flex;
-   background: #2D359E;
-background: radial-gradient(circle, rgba(45, 53, 158, 1) 1%, rgba(14, 9, 30, 1) 100%);
+    background: #2D359E;
+    background: radial-gradient(circle, rgba(45, 53, 158, 1) 1%, rgba(14, 9, 30, 1) 100%);
 }
 
 aside {
@@ -58,15 +54,11 @@ aside {
 .div8,
 .div9 {
     border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(2.8px);
-            -webkit-backdrop-filter: blur(2.8px);
-            border: 1px solid rgba(255, 249, 249, 0.51);
-            background: linear-gradient(232deg, rgba(104, 109, 189, .1) 1%, rgb(80 60 147) 100%);
-
-
-
-    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(2.8px);
+    border: 1px solid rgba(255, 249, 249, 0.51);
+    background: linear-gradient(232deg, rgba(104, 109, 189, .1) 1%, rgb(80 60 147) 100%);
 }
 
 .row {
@@ -108,9 +100,12 @@ aside {
     align-items: center;
 }
 
-.div1 .text-bottom span, .div2 .text-bottom span, .div3 .text-bottom span, .div4 .text-bottom span {
+.div1 .text-bottom span,
+.div2 .text-bottom span,
+.div3 .text-bottom span,
+.div4 .text-bottom span {
     margin-left: 7px;
-    color: #01B574; 
+    color: #01B574;
     /* dynamicznie kolor */
     font-family: Momcake;
     font-size: 125%;
