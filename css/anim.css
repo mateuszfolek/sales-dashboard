@@ -109,6 +109,6 @@
 .div7:hover,
 .div8:hover,
 .div9:hover {
-    box-shadow: 0 0px 75px rgba(255, 255, 255, .1);
+    box-shadow: 0 0px 75px rgba(231, 255, 122, 0.15);
     backdrop-filter: blur(14px);
 }
