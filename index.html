@@ -7,6 +7,8 @@
     <title>Sales Dashboard | 2025</title>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/div-gradients.css">
+    <link rel="stylesheet" href="css/anim.css">
 </head>
 
 <body>
@@ -15,60 +17,60 @@
 
         </aside>
         <div class="grid">
-            <!-- <div class="row"> -->
-            <div class="div1">
-                <div class="text">
-                    <p>Today's Money</p>
-                    <div class="text-bottom">
-                      <h3 id="revenue"></h3>
-                    <span id="growth-revenue">+55%</span>  
+            <div class="row">
+                <div class="div1" id="row-div">
+                    <div class="text">
+                        <p class="subhead">Today's Money:</p>
+                        <div class="text-bottom">
+                            <h3 class="data-value" id="revenue"></h3>
+                            <span id="growth-revenue"></span>
+                        </div>
+
                     </div>
-                    
+                    <span class="icon">
+                        <img src="./assets/icons/wallet.svg" alt="">
+                    </span>
                 </div>
-                <div class="icon">
-                    <img src="./assets/icons/wallet.svg" alt="">
+                <div class="div2" id="row-div">
+                    <div class="text">
+                        <p class="subhead">Today's Users:</p>
+                        <div class="text-bottom">
+                            <h3 class="data-value" id="users"></h3>
+                            <span id="growth-users"></span>
+                        </div>
+
+                    </div>
+                    <span class="icon">
+                        <img src="./assets/icons/globe.svg" alt="">
+                    </span>
+                </div>
+                <div class="div3" id="row-div">
+                    <div class="text">
+                        <p class="subhead">New Clients:</p>
+                        <div class="text-bottom">
+                            <h3 class="data-value" id="clients"></h3>
+                            <span id="decrease-clients"></span>
+                        </div>
+
+                    </div>
+                    <span class="icon">
+                        <img src="./assets/icons/file-text.svg" alt="">
+                    </span>
+                </div>
+                <div class="div4" id="row-div">
+                    <div class="text">
+                        <p class="subhead">Today's Money:</p>
+                        <div class="text-bottom">
+                            <h3 class="data-value" id="sales"></h3>
+                            <span id="growth-sales"></span>
+                        </div>
+
+                    </div>
+                    <span class="icon">
+                        <img src="./assets/icons/dollar-sign.svg" alt="">
+                    </span>
                 </div>
             </div>
-            <div class="div2">
-                <div class="text">
-                    <p>Today's Users</p>
-                    <div class="text-bottom">
-                      <h3 id="users"></h3>
-                    <span id="growth-users"></span>  
-                    </div>
-                    
-                </div>
-                <div class="icon">
-                    <img src="./assets/icons/globe.svg" alt="">
-                </div>
-            </div>
-            <div class="div3">
-                <div class="text">
-                    <p>New Clients</p>
-                    <div class="text-bottom">
-                      <h3 id="clients"></h3>
-                    <span id="decrease-clients"></span>  
-                    </div>
-                    
-                </div>
-                <div class="icon">
-                    <img src="./assets/icons/file-text.svg" alt="">
-                </div>
-            </div>
-            <div class="div4">
-                <div class="text">
-                    <p>Today's Money</p>
-                    <div class="text-bottom">
-                      <h3 id="sales"></h3>
-                    <span id="growth-sales"></span>  
-                    </div>
-                    
-                </div>
-                <div class="icon">
-                    <img src="./assets/icons/dollar-sign.svg" alt="">
-                </div>
-            </div>
-            <!-- </div> -->
             <div class="div5">
             </div>
             <div class="div6">
@@ -83,7 +85,7 @@
             </div>
         </div>
     </main>
-    
+
     <script src="script.js"></script>
 </body>
 

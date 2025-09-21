@@ -1,0 +1,114 @@
+/* animacja dla całego diva */
+@keyframes slideDownBlur {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+        filter: blur(8px);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+/* do contentu */
+@keyframes contentFade {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+        filter: blur(6px);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9 {
+    opacity: 0;
+    animation: slideDownBlur 0.8s ease forwards;
+}
+
+.text,
+.icon {
+    opacity: 0;
+    animation: contentFade 0.8s ease forwards;
+    animation-delay: .6s;
+    /* delay dla contentu */
+}
+
+.div1 {
+    animation-delay: 0s;
+}
+
+.div2 {
+    animation-delay: 0.1s;
+}
+
+.div3 {
+    animation-delay: 0.2s;
+}
+
+.div4 {
+    animation-delay: 0.3s;
+}
+
+.div5 {
+    animation-delay: 0.4s;
+}
+
+.div6 {
+    animation-delay: 0.5s;
+}
+
+.div7 {
+    animation-delay: 0.6s;
+}
+
+.div8 {
+    animation-delay: 0.7s;
+}
+
+.div9 {
+    animation-delay: 0.8s;
+}
+
+
+
+/* do hoverów */
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9 {
+    transition: 0.5s ease;
+}
+
+.div1:hover,
+.div2:hover,
+.div3:hover,
+.div4:hover,
+.div5:hover,
+.div6:hover,
+.div7:hover,
+.div8:hover,
+.div9:hover {
+    box-shadow: 0 0px 75px rgba(255, 255, 255, .1);
+    backdrop-filter: blur(14px);
+}

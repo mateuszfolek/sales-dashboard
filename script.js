@@ -1,36 +1,58 @@
-const values = [
+const September = [
     53301,
     2300,
     3462,
     103430
 ]
 
-const procentageValues = [
+const August = [
     41280,
-    3,
-    -2,
-    5
+    1907,
+    2554,
+    88083
 ]
-// to be fixed ^
 
 
 
 
-document.getElementById("revenue").innerHTML = "$" + values[0];   
-document.getElementById("growth-revenue").innerHTML = "+" +  procentageValues[0] + "%";
 
-document.getElementById("growth-revenue").innerHTML = ((procentageValues[0] - values[0])) / procentageValues[0] + "%";
-// to be fixed ^
-
-
-
-document.getElementById("users").innerHTML =  values[1];   
-document.getElementById("growth-users").innerHTML = "+" +  procentageValues[1] + "%";
-
-
-document.getElementById("clients").innerHTML = "+" + values[2];   
-document.getElementById("decrease-clients").innerHTML = procentageValues[2] + "%";
+document.getElementById("revenue").innerHTML = "$" + September[0];
+if ((((September[0] - August[0]) / August[0]) * 100).toFixed(2) > 0) {
+    document.getElementById("growth-revenue").innerHTML = "+" + (((September[0] - August[0]) / August[0]) * 100).toFixed(2) + "%";
+}
+else {
+    document.getElementById("growth-revenue").innerHTML = (((September[0] - August[0]) / August[0]) * 100).toFixed(2) + "%";
+    document.getElementById("growth-revenue").style.color = "#c93030";
+}
 
 
-document.getElementById("sales").innerHTML = "$" + values[3];   
-document.getElementById("growth-sales").innerHTML = "+" +  procentageValues[3] + "%";
+document.getElementById("users").innerHTML = September[1];
+if ((((September[1] - August[1]) / August[1]) * 100).toFixed(2) > 0) {
+    document.getElementById("growth-users").innerHTML = "+" + (((September[1] - August[1]) / August[1]) * 100).toFixed(2) + "%";
+}
+else {
+    document.getElementById("growth-users").innerHTML = (((September[1] - August[1]) / August[1]) * 100).toFixed(2) + "%";
+    document.getElementById("growth-users").style.color = "#c93030";
+}
+
+
+document.getElementById("clients").innerHTML = September[2];
+if ((((September[2] - August[2]) / August[2]) * 100).toFixed(2) > 0) {
+    document.getElementById("decrease-clients").innerHTML = "+" + (((September[2] - August[2]) / August[2]) * 100).toFixed(2) + "%";
+}
+else {
+    document.getElementById("decrease-clients").innerHTML = (((September[2] - August[2]) / August[2]) * 100).toFixed(2) + "%";
+    document.getElementById("decrease-clients").style.color = "#c93030";
+}
+
+
+document.getElementById("sales").innerHTML = "$" + September[3];
+if ((((September[3] - August[3]) / August[3]) * 100).toFixed(2) > 0) {
+    document.getElementById("growth-sales").innerHTML = "+" + (((September[3] - August[3]) / August[3]) * 100).toFixed(2) + "%";
+}
+else {
+    document.getElementById("growth-sales").innerHTML = (((September[3] - August[3]) / August[3]) * 100).toFixed(2) + "%";
+    document.getElementById("growth-sales").style.color = "#c93030";
+}
+
+

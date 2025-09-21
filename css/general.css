@@ -1,16 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-
-p {
-    font-family: Timeburner;
-}
-
-h3 {
-    font-family: Momcake;
 }
 
 html body {
@@ -27,7 +22,6 @@ main {
 
 aside {
     flex: 1 5 20%;
-    /* height: 100vh; */
     background-color: red;
     flex-wrap: wrap;
 }
@@ -44,233 +38,126 @@ aside {
     grid-row-gap: 20px;
 }
 
-.grid .div1,
-.div2,
-.div3,
-.div4,
-.div5,
-.div6,
-.div7,
-.div8,
-.div9 {
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.8px);
-    -webkit-backdrop-filter: blur(2.8px);
-    border: 1px solid rgba(255, 249, 249, 0.51);
-    background: linear-gradient(232deg, rgba(104, 109, 189, .1) 1%, rgb(80 60 147) 100%);
-}
-
 .row {
     grid-area: 1 / 1 / 4 / 21;
+    justify-content: space-between;
     display: flex;
 }
 
-/* div1 */
-
-.div1 {
-    grid-area: 1 / 1 / 4 / 6;
+#row-div {
+    width: 100%;
+    /* flex-shrink: 1; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
 
-.div1 .text {
-    margin-left: 5px;
+.div1 {
+    margin: 0 10px 0 0;
 }
 
-.div1 h3 {
+.div2 {
+    margin: 0 10px;
+}
+
+.div3 {
+    margin: 0 10px;
+}
+
+.div4 {
+    margin: 0 0 0 10px;
+}
+
+.text {
+    margin: 5px;
+}
+
+.data-value {
     font-size: 1.8rem;
     color: #FFF;
+    font-family: "Google Sans Code", monospace;
 }
 
-.div1 p {
-    color: #a0aec0;
+.subhead {
+    color: #a1a6ad;
+    font-family: "Fredoka", sans-serif;
+    font-size: 110%;
 }
 
-.div1 .icon {
+.icon {
     background-color: #0662cf;
     padding: 10px;
     border-radius: 15px;
 }
 
-.div1 .text-bottom {
+.text-bottom {
     display: flex;
     align-items: center;
 }
 
-.div1 .text-bottom span,
-.div2 .text-bottom span,
-.div3 .text-bottom span,
-.div4 .text-bottom span {
+#growth-revenue,
+#growth-users,
+#decrease-clients,
+#growth-sales {
     margin-left: 7px;
     color: #01B574;
-    /* dynamicznie kolor */
+    /* dynamiczny kolor w js jest*/
     font-family: Momcake;
     font-size: 125%;
 }
 
-/* div2 */
-
-.div2 {
-    grid-area: 1 / 6 / 4 / 11;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-
-}
-
-
-
-.div2 .text {
-    margin-left: 5px;
-}
-
-.div2 h3 {
-    font-size: 1.8rem;
-    color: #FFF;
-}
-
-.div2 p {
-    color: #a0aec0;
-}
-
-.div2 .icon {
-    background-color: #0075FF;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-.div2 .text-bottom {
-    display: flex;
-    align-items: center;
-}
-
-/* div3 */
-
-.div3 {
-    grid-area: 1 / 11 / 4 / 16;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.div3 .text {
-    margin-left: 5px;
-}
-
-.div3 h3 {
-    font-size: 1.8rem;
-    color: #FFF;
-}
-
-.div3 p {
-    color: #a0aec0;
-}
-
-.div3 .icon {
-    background-color: #0075FF;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-.div3 .text-bottom {
-    display: flex;
-    align-items: center;
-}
-
-/* div4 */
-
-.div4 {
-    grid-area: 1 / 16 / 4 / 21;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.div4 .text {
-    margin-left: 5px;
-}
-
-.div4 h3 {
-    font-size: 1.8rem;
-    color: #FFF;
-}
-
-.div4 p {
-    color: #a0aec0;
-}
-
-.div4 .icon {
-    background-color: #0075FF;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-.div4 .text-bottom {
-    display: flex;
-    align-items: center;
-}
-
 .div5 {
     grid-area: 4 / 1 / 14 / 10;
-    /* background-color: rgba(55, 12, 156, 0.171); */
 }
 
 .div6 {
     grid-area: 4 / 10 / 14 / 15;
-
 }
 
 .div7 {
     grid-area: 4 / 15 / 14 / 21;
-
 }
 
 .div8 {
     grid-area: 14 / 1 / 26 / 13;
-
 }
 
 .div9 {
     grid-area: 14 / 13 / 26 / 21;
-
 }
-
 
 
 @media (max-width:1440px) {
     main {
         display: flex;
-        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:1200px) {
+    aside {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .grid {
+        padding: 25px;
+        height: 100vh;
+        flex: 2 1 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
         flex-wrap: wrap;
     }
 
-
-
+    .row div {
+        margin: 0;
+        flex: 1 1 45%;
+        margin: 5px;
+    }
 
 }
-
-/* 
-@media (max-width: 960px) {
-    .grid {
-    padding: 25px;
-    background-color: black;
-    height: 100vh;
-    flex: 2 1 80%;
-    display: flex;
-    flex-direction: column;
-}
-
-   .row {
-    display: flex;
-   }
-
-.row div {
-    flex: 1 5 50%;
-}
-} */
