@@ -47,6 +47,7 @@
     animation: contentFade 0.8s ease forwards;
     animation-delay: .6s;
     /* delay dla contentu */
+    transition-duration: .3s;
 }
 
 .div1 {
@@ -111,4 +112,15 @@
 .div9:hover {
     box-shadow: 0 0px 75px rgba(231, 255, 122, 0.15);
     backdrop-filter: blur(14px);
+}
+
+
+.div1:hover .text, .div2:hover .text {
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
+  transition: text-shadow 0.3s ease;
+}
+
+.div1:hover .icon{
+  box-shadow: 0 0 24px rgba(6, 98, 207, 0.7);
+  transition: box-shadow 0.3s ease;
 }
