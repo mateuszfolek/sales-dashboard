@@ -21,7 +21,8 @@ main {
 }
 
 aside {
-    flex: 1 5 20%;
+    flex: 1 5 15%;
+    max-width: 200px;
     background-color: red;
     flex-wrap: wrap;
 }
