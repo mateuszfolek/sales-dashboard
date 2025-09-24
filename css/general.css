@@ -11,7 +11,7 @@
 html body {
     width: 100vw;
     min-height: 100vh;
-
+    font-family: "Google Sans Code", monospace;
 }
 
 main {
@@ -22,7 +22,7 @@ main {
 
 aside {
     flex: 1 5 15%;
-    max-width: 200px;
+    max-width: 250px;
     background-color: red;
     flex-wrap: wrap;
 }
@@ -129,6 +129,8 @@ aside {
 }
 
 
+
+
 @media (max-width:1440px) {
     main {
         display: flex;
@@ -159,6 +161,25 @@ aside {
         margin: 0;
         flex: 1 1 45%;
         margin: 5px;
+    }
+
+    #div5 {
+        padding: 20px;
+    }
+
+     .graph5-content {
+    min-height: 100%;
+  }
+
+  body {
+        background: #2D359E;
+    background: radial-gradient(circle, rgba(45, 53, 158, 1) 1%, rgba(14, 9, 30, 1) 100%);
+  }
+
+      .graph6-content {
+      width: 100%;
+      height: 150%;
+      margin: 10px;
     }
 
 }

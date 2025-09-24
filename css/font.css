@@ -2,3 +2,10 @@
   font-family: Momcake;
   src: url(../assets/fonts/momcake-font/MomcakeBold-WyonA.otf);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code&display=swap');
+
+html body P{
+  font-family: "Google Sans Code", monospace;
+}
