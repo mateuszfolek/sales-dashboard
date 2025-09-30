@@ -50,6 +50,8 @@ aside {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+        box-sizing: border-box;
+
 }
 
 #div1 {
@@ -87,6 +89,8 @@ aside {
     background-color: #0662cf;
     padding: 10px;
     border-radius: 15px;
+    align-items: center;
+    display: flex;
 }
 
 .text-bottom {
