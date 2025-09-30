@@ -110,6 +110,7 @@ aside {
 
 #div6 {
     grid-area: 4 / 10 / 14 / 15;
+    padding: 30px;
 }
 
 #div7 {
@@ -118,6 +119,7 @@ aside {
 
 #div8 {
     grid-area: 14 / 1 / 26 / 13;
+    padding: 30px;
 }
 
 #div9 {
