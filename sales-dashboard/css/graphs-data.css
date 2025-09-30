@@ -423,4 +423,16 @@ h1{
 }
 .box2 {
     display: flex;
+    width: 100%;
+}
+.clock{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.val {
+    margin: auto;
+        width: 100%;
+    display: flex;
 }
