@@ -18,15 +18,16 @@
 
  .graph5-header {
      font-weight: bold;
-     background-color: #f7f9fc;
+     background-color: #555;
      font-size: 13px;
-     color: #555;
+     color: #333;
      border-bottom: 1px solid #eee;
  }
 
  .graph5-row {
      border-bottom: 1px solid #f0f0f0;
      font-size: 14px;
+     background-color: rgb(53, 56, 65, 0.183);
  }
 
  .graph5-col {
