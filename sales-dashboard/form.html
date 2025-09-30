@@ -1,16 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/general.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularz kontaktowy</title>
+  <link rel="stylesheet" href="css/general.css">
+  <style>
+    /* animacje */
+    @keyframes slideDownBlur {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
+        filter: blur(8px);
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+
+    @keyframes contentFade {
+      from {
+        transform: translateY(-10px);
+        opacity: 0;
+        filter: blur(6px);
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      height: 100vh;
+    }
+
+    a {
+      margin-bottom: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #f0ffff;
+      animation: slideDownBlur 0.8s ease forwards;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 280px;
+      opacity: 0;
+      animation: slideDownBlur 0.8s ease forwards;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-family: inherit;
+      outline: none;
+      opacity: 0;
+      animation: contentFade 0.8s ease forwards;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    input[type="submit"] {
+      background: #2d359e;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: #1e246d;
+    }
+
+    /* opóźnienia (kaskada) */
+    input:nth-of-type(1) { animation-delay: 0.2s; }
+    input:nth-of-type(2) { animation-delay: 0.3s; }
+    input:nth-of-type(3) { animation-delay: 0.4s; }
+    textarea             { animation-delay: 0.5s; }
+    input[type="submit"] { animation-delay: 0.6s; }
+  </style>
 </head>
-<body style="height: 100vh;">
-    <a href="index.html" style="color: white; align-items: center;
-     display: flex; justify-content: center;">POWRÓT</a>
-     
-     <input type="text" placeholder="Name"><input type="text" placeholder="Surname"><input type="text" placeholder="Email"><textarea name="" placeholder="Wiadomosć do autora" id=""></textarea>
-     <input type="submit">
+<body>
+  <a href="index.html">POWRÓT</a>
+
+  <form>
+    <input type="text" placeholder="Imię">
+    <input type="text" placeholder="Nazwisko">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Wiadomość do autora"></textarea>
+    <input type="submit" value="Wyślij">
+  </form>
 </body>
 </html>
