@@ -8,7 +8,7 @@ const September = [
 const August = [
     41280,
     1907,
-    2554,
+    4254,
     88083
 ]
 
@@ -54,12 +54,6 @@ else {
     document.getElementById("growth-sales").innerHTML = (((September[3] - August[3]) / August[3]) * 100).toFixed(2) + "%";
     document.getElementById("growth-sales").style.color = "#c93030";
 }
-
-
-
-
-
-
 
 const graph5Data = [
     { name: "Alex Nowak", projects: 23, follower: 1589201, avatar: "https://i.pravatar.cc/150?img=1" },
@@ -146,8 +140,8 @@ data.bars.forEach(value => {
     bar.className = "graph9-bar";
     bar.style.height = `${(value / max) * 100}%`;
     chart.appendChild(bar);
-});
 
+});
 
 
 
@@ -184,16 +178,6 @@ graph6Data.forEach(d => {
 
 
 
-
-
-
-
-
-
-
-
-
-
 const ageGroups = ['15-24', '25-34', '35-44', '45-54', '55-64', '+64'];
 
 const menData = [85000, 90000, 60000, 30000, 10000, 5000];
@@ -222,116 +206,6 @@ ageGroups.forEach((group, index) => {
     womenContainer.appendChild(womenBar);
     dataContainer.appendChild(label);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

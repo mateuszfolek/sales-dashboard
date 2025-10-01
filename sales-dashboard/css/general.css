@@ -138,13 +138,11 @@ aside {
         flex-wrap: wrap;
     }
 }
-
 @media (max-width:1200px) {
     aside {
         display: none;
     }
 }
-
 @media (max-width: 960px) {
     .grid {
         padding: 25px;
@@ -153,37 +151,25 @@ aside {
         display: flex;
         flex-direction: column;
     }
-
     .row {
         flex-wrap: wrap;
     }
-
     #div1, #div2, #div3, #div4 {
         margin: 5px 5px;
         flex: 1 1 45%;
     }
-
     #div5 {
         padding: 20px;
     }
-
     .graph5-content {
         min-height: 100%;
     }
-
     .graph6-content {
         width: 100%;
         height: 150%;
         margin: 10px;
     }
-
     .aside-wrapper {
-        /* justify-content: flex-start; */
         flex-direction: column;
-        /* display: flex; */
-    }
-
-    #div6 {
-        height: 1000000px;
     }
 }
