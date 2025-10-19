@@ -1,5 +1,5 @@
 aside {
-  flex: 1 5 15%;
+  flex: 1 0 15%;
   max-width: 200px;
   flex-wrap: wrap;
   display: flex;
@@ -90,4 +90,20 @@ body {
 
 .burger-menu {
   margin: 20px;
+}
+
+@media (max-width: 960px) {
+  .burger-menu {
+    margin: 20px;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .sidebar {
+    height: auto;
+  }
+
+  .aside-wrapper {
+    flex-direction: column;
+  }
 }

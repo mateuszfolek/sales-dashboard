@@ -17,7 +17,7 @@ html body {
 
 main {
     display: flex;
-    background: transparent; /* już mamy tło na body */
+    background: transparent;
 }
 
 aside {
@@ -30,7 +30,7 @@ aside {
 .grid {
     padding: 25px;
     height: 100vh;
-    flex: 2 1 80%;
+    flex: 1 1 80%;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(25, 1fr);
@@ -50,8 +50,9 @@ aside {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-        box-sizing: border-box;
-
+    box-sizing: border-box;
+    flex: 1 10 25%;
+    gap: 10px;
 }
 
 #div1 {
@@ -75,7 +76,7 @@ aside {
 }
 
 .data-value {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: #eeeeee;
 }
 
@@ -114,7 +115,7 @@ aside {
 
 #div6 {
     grid-area: 4 / 10 / 14 / 15;
-    padding: 30px;
+    padding: 20px;
 }
 
 #div7 {
@@ -138,9 +139,15 @@ aside {
         flex-wrap: wrap;
     }
 }
-@media (max-width:1200px) {
+@media (max-width:1280px) {
     aside {
         display: none;
+    }
+    .subhead {
+        font-size: 90%;
+    }
+    .data-value {
+        font-size: 1.3rem;
     }
 }
 @media (max-width: 960px) {
@@ -171,5 +178,10 @@ aside {
     }
     .aside-wrapper {
         flex-direction: column;
+    }
+    @media (max-width: 600px){
+        .row {
+            display: block;
+        }
     }
 }

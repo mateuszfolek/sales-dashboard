@@ -15,7 +15,7 @@
 
 <body>
     <main>
-       <div class="aside-wrapper">
+        <div class="aside-wrapper">
             <div class="burger-menu">
                 <img src="./assets/icons/menu.svg" alt="">
             </div>
@@ -40,17 +40,19 @@
                             <img src="./assets/icons/credit-card.svg" alt="">
                             <span>Billing</span>
                         </li>
-                        <li class="menu-item">
-                            <img src="./assets/icons/wrench.svg" alt="">
-                            <span>RTL</span>
-                        </li>
+                        <a href="form.html" style="text-decoration: none;">
+                            <li class="menu-item">
+                                <img src="./assets/icons/wrench.svg" alt="">
+                                <span>Contact form</span>
+                            </li>
+                        </a>
 
                         <li class="menu-section">ACCOUNT PAGES</li>
 
-                        <a href="form.html" style="text-decoration: none;"><li class="menu-item">
+                        <li class="menu-item">
                             <img src="./assets/icons/user.svg" alt="">
                             <span>Profile</span>
-                        </li></a>
+                        </li>
                         <li class="menu-item">
                             <img src="./assets/icons/file.svg" alt="">
                             <span>Sign In</span>
@@ -111,7 +113,7 @@
                 </div>
                 <div class="graph-div" id="div4">
                     <div class="text">
-                        <p class="subhead">Today's Money:</p>
+                        <p class="subhead">Month's Money:</p>
                         <div class="text-bottom">
                             <h3 class="data-value" id="sales"></h3>
                             <span id="growth-sales"></span>
@@ -124,153 +126,153 @@
                 </div>
             </div>
 
-<div class="graph-div" id="div5">
-  <div class="graph5-content">
-    <div class="graph5-header">
-      <div class="graph5-col graph5-name">NAME</div>
-      <div class="graph5-col graph5-projects">PROJECTS</div>
-      <div class="graph5-col graph5-follower">FOLLOWER</div>
-    </div>
-    <div class="graph5-body"></div>
-  </div>
-</div>
+            <div class="graph-div" id="div5">
+                <div class="graph5-content">
+                    <div class="graph5-header">
+                        <div class="graph5-col graph5-name">NAME</div>
+                        <div class="graph5-col graph5-projects">PROJECTS</div>
+                        <div class="graph5-col graph5-follower">FOLLOWER</div>
+                    </div>
+                    <div class="graph5-body"></div>
+                </div>
+            </div>
 
 
 
-<div class="graph-div graph6-graph-div" id="div6">
-  <div class="graph6-content">
-    <div class="graph6-bar-chart" id="graph6-chart"></div>
-  </div>
-</div>
-            
+            <div class="graph-div graph6-graph-div" id="div6">
+                <div class="graph6-content">
+                    <div class="graph6-bar-chart" id="graph6-chart"></div>
+                </div>
+            </div>
+
 
             <div class="graph-div" id="div7">
                 <div class="content">
-                     <div class="desc-7">
+                    <div class="desc-7">
                         <p>Płeć i wiek użtkowników</p>
                         <div class="gender">
                             <p class="men">Men</p>
                             <p class="women">Women</p>
                         </div>
-                     </div>
-                     <div class="graph-7">
-                            <div class="float" id="men"></div>
-                            <div class="float" id="data"></div>
-                            <div class="float" id="women"></div>
-                     </div>
+                    </div>
+                    <div class="graph-7">
+                        <div class="float" id="men"></div>
+                        <div class="float" id="data"></div>
+                        <div class="float" id="women"></div>
+                    </div>
                 </div>
             </div>
             <div class="graph-div" id="div8">
                 <div class="content">
 
-            <div class="div2">
+                    <div class="div2">
 
-                    <h1 class="header" id="day"></h1>
-                    <div class="box2">
-                        <div class="clock">
-                            <div class="front-clock">
-                                <div id="hour" class="val">00</div>
-                                <p>godzina</p>
+                        <h1 class="header" id="day"></h1>
+                        <div class="box2">
+                            <div class="clock">
+                                <div class="front-clock">
+                                    <div id="hour" class="val">00</div>
+                                    <p>godzina</p>
+                                </div>
+                            </div>
+
+                            <div class="clock">
+                                <div class="front-clock">
+                                    <div id="minute" class="val">00</div>
+                                    <p>minuta</p>
+                                </div>
+                            </div>
+
+                            <div class="clock">
+                                <div class="front-clock">
+                                    <div id="second" class="val">00</div>
+                                    <p>sekunda</p>
+                                </div>
                             </div>
                         </div>
-            
-                        <div class="clock">
-                            <div class="front-clock">
-                                <div id="minute" class="val">00</div>
-                                <p>minuta</p>
-                            </div>
-                        </div>
-            
-                        <div class="clock">
-                            <div class="front-clock">
-                                <div id="second" class="val">00</div>
-                                <p>sekunda</p>
-                            </div>
-                        </div>
+
                     </div>
 
-            </div>
-           
-            <div class="div5">
-                <section class="cal_style">
-                    <table id="calendar">
-                        <thead>
-                            <tr>
-                                <td><button id="prev">←</button></td>
-                                <td colspan="5" id="calendar_top" class="header">marzec 2025</td>
-                                <td><button id="next">→</button></td>
-                            </tr>
-                            <tr>
-                                <td>pon</td>
-                                <td>wto</td>
-                                <td>śro</td>
-                                <td>czw</td>
-                                <td>pt</td>
-                                <td>sob</td>
-                                <td>nie</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td id="td"></td>
-                                <td id="td"></td>
-                                <td id="td"></td>
-                                <td id="td"></td>
-                                <td id="td"></td>
-                                <td id="td">1</td>
-                                <td id="td">2</td>
-                            </tr>
-                            <tr>
-                                <td id="td">3</td>
-                                <td id="td">4</td>
-                                <td id="td">5</td>
-                                <td id="td">6</td>
-                                <td id="td">7</td>
-                                <td id="td">8</td>
-                                <td id="td">9</td>
-                            </tr>
-                            <tr>
-                                <td id="td">10</td>
-                                <td id="td">11</td>
-                                <td id="td">12</td>
-                                <td id="td">13</td>
-                                <td id="td">14</td>
-                                <td id="td">15</td>
-                                <td id="td">16</td>
-                            </tr>
-                            <tr>
-                                <td id="td">17</td>
-                                <td id="td">18</td>
-                                <td id="td">19</td>
-                                <td id="td">20</td>
-                                <td id="td">21</td>
-                                <td id="td">22</td>
-                                <td id="td">23</td>
-                            </tr>
-                            <tr>
-                                <td id="td">24</td>
-                                <td id="td">25</td>
-                                <td id="td">26</td>
-                                <td id="td">27</td>
-                                <td id="td">28</td>
-                                <td id="td">29</td>
-                                <td id="td">30</td>
-                            </tr>
-                            <tr>
-                                <td id="td">31</td>
-                                <td id="td"></td>
-                                <td id="td"></td>
-                                <td id="td"></td>
-                                <td id="td"></td>
-                                <td id="td"></td>
-                                <td id="td"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-            </div>  
-            
-                     </div>
+                    <div class="div5">
+                        <section class="cal_style">
+                            <table id="calendar">
+                                <thead>
+                                    <tr>
+                                        <td><button id="prev">←</button></td>
+                                        <td colspan="5" id="calendar_top" class="header">marzec 2025</td>
+                                        <td><button id="next">→</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>pon</td>
+                                        <td>wto</td>
+                                        <td>śro</td>
+                                        <td>czw</td>
+                                        <td>pt</td>
+                                        <td>sob</td>
+                                        <td>nie</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="td"></td>
+                                        <td id="td"></td>
+                                        <td id="td"></td>
+                                        <td id="td"></td>
+                                        <td id="td"></td>
+                                        <td id="td">1</td>
+                                        <td id="td">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="td">3</td>
+                                        <td id="td">4</td>
+                                        <td id="td">5</td>
+                                        <td id="td">6</td>
+                                        <td id="td">7</td>
+                                        <td id="td">8</td>
+                                        <td id="td">9</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="td">10</td>
+                                        <td id="td">11</td>
+                                        <td id="td">12</td>
+                                        <td id="td">13</td>
+                                        <td id="td">14</td>
+                                        <td id="td">15</td>
+                                        <td id="td">16</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="td">17</td>
+                                        <td id="td">18</td>
+                                        <td id="td">19</td>
+                                        <td id="td">20</td>
+                                        <td id="td">21</td>
+                                        <td id="td">22</td>
+                                        <td id="td">23</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="td">24</td>
+                                        <td id="td">25</td>
+                                        <td id="td">26</td>
+                                        <td id="td">27</td>
+                                        <td id="td">28</td>
+                                        <td id="td">29</td>
+                                        <td id="td">30</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="td">31</td>
+                                        <td id="td"></td>
+                                        <td id="td"></td>
+                                        <td id="td"></td>
+                                        <td id="td"></td>
+                                        <td id="td"></td>
+                                        <td id="td"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+
+                </div>
             </div>
             <div class="graph-div" id="div9">
 
@@ -289,7 +291,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </main>
 
