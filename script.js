@@ -14,8 +14,6 @@ const August = [
 
 
 
-
-
 document.getElementById("revenue").innerHTML = "$" + September[0];
 if ((((September[0] - August[0]) / August[0]) * 100).toFixed(2) > 0) {
     document.getElementById("growth-revenue").innerHTML = "+" + (((September[0] - August[0]) / August[0]) * 100).toFixed(2) + "%";
@@ -176,8 +174,6 @@ graph6Data.forEach(d => {
 });
 
 
-
-
 const ageGroups = ['15-24', '25-34', '35-44', '45-54', '55-64', '+64'];
 
 const menData = [85000, 90000, 60000, 30000, 10000, 5000];
@@ -207,13 +203,8 @@ ageGroups.forEach((group, index) => {
     dataContainer.appendChild(label);
 });
 
-
-
-// kalendarz
-
-
 // Tablica z nazwami miesięcy
-var aMonths = new Array('styczeń','luty','marzec','kwiecień','maj','czerwiec','lipiec','sierpień','wrzesień','październik','listopad','grudzien');
+var aMonths = new Array('styczeń', 'luty', 'marzec', 'kwiecień', 'maj', 'czerwiec', 'lipiec', 'sierpień', 'wrzesień', 'październik', 'listopad', 'grudzien');
 
 // Inicjalizacja daty na bieżący moment
 var date = new Date();
@@ -241,7 +232,7 @@ function NextMonth() {
 
 // Funkcja rysująca kalendarz
 function Calendar() {
-    let  td = document.querySelectorAll('#calendar tbody td'); // Pobranie komórek kalendarza
+    let td = document.querySelectorAll('#calendar tbody td'); // Pobranie komórek kalendarza
     const firstDay = new Date(date.getFullYear(), date.getMonth(), 1); // Pierwszy dzień miesiąca
     const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0); // Ostatni dzień miesiąca
     const day = firstDay.getDay() ? firstDay.getDay() - 1 : 6; // Dzień tygodnia dla pierwszego dnia
@@ -256,7 +247,7 @@ function Calendar() {
         // Ukrycie niepotrzebnych komórek
         if (i >= 35) td[i].style.display = (day + dzien - 1 < 36) ? 'none' : '';
     }
-    
+
 
 };
 
@@ -285,30 +276,30 @@ var monthName = [
     'Listopad',
     'Grudzień'
 ]
-const clock = setInterval(function time(){
+const clock = setInterval(function time() {
     let today = new Date()
     let d = today.getDate()
-    let m = today.getMonth()    
+    let m = today.getMonth()
     let y = today.getFullYear()
     let h = today.getHours()
     let min = today.getMinutes()
     let sec = today.getSeconds()
 
-    
+
 
     day.innerHTML = `${d} ${monthName[m]} ${y}`
     hour.textContent = h
 
-    if(hour.textContent < 10){
+    if (hour.textContent < 10) {
         hour.textContent = '0' + hour.textContent
     }
 
     minute.innerText = min
-    if(minute.textContent < 10){
+    if (minute.textContent < 10) {
         minute.textContent = '0' + minute.textContent
     }
     second.innerText = sec
-    if(second.textContent < 10){
+    if (second.textContent < 10) {
         second.textContent = '0' + second.textContent
     }
 
@@ -327,33 +318,33 @@ function Highliting() {
             element.style.background = 'rgba(253, 29, 156, 0.5)';
         }
 
-        else if(element.textContent == ''){
+        else if (element.textContent == '') {
             element.id = "pusty"
-             document.querySelector('style').innerHTML = `#pusty{outline: none; cursor: default;} tbody td:hover {outline: 1px solid black;
-        cursor: pointer;} `;
-            }
-
-       document.querySelector('#next').addEventListener('click', function(){
-         if(element.textContent == ''){
-            element.id = "pusty"
-             document.querySelector('style').innerHTML = `#pusty{outline: none; cursor: default;} tbody td:hover {outline: 1px solid black;
-        cursor: pointer;} `;
-            }
-        else if(element.textContent != ''){
-            element.id = ""
-        }
-       });
-       document.querySelector('#prev').addEventListener('click', function(){
-        if(element.textContent == ''){
-           element.id = "pusty"
             document.querySelector('style').innerHTML = `#pusty{outline: none; cursor: default;} tbody td:hover {outline: 1px solid black;
+        cursor: pointer;} `;
+        }
+
+        document.querySelector('#next').addEventListener('click', function () {
+            if (element.textContent == '') {
+                element.id = "pusty"
+                document.querySelector('style').innerHTML = `#pusty{outline: none; cursor: default;} tbody td:hover {outline: 1px solid black;
+        cursor: pointer;} `;
+            }
+            else if (element.textContent != '') {
+                element.id = ""
+            }
+        });
+        document.querySelector('#prev').addEventListener('click', function () {
+            if (element.textContent == '') {
+                element.id = "pusty"
+                document.querySelector('style').innerHTML = `#pusty{outline: none; cursor: default;} tbody td:hover {outline: 1px solid black;
        cursor: pointer;} `;
-           }
-       else if(element.textContent != ''){
-           element.id = ""
-       }
-      })
-        
+            }
+            else if (element.textContent != '') {
+                element.id = ""
+            }
+        })
+
     });
 }
 Highliting();
