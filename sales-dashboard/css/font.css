@@ -1,8 +1,0 @@
-@font-face {
-  font-family: Momcake;
-  src: url(../assets/fonts/momcake-font/MomcakeBold-WyonA.otf);
-}
-
-html body P{
-  font-family: "Google Sans Code", monospace;
-}

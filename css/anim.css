@@ -79,7 +79,9 @@
     animation-delay: 0.8s;
 }
 
-
+.icon:hover {
+    cursor: pointer;
+}
 
 /* do hoverów */
 .graph-div {
@@ -87,14 +89,14 @@
 }
 
 .graph-div:hover {
-    box-shadow: 0 0px 75px rgba(231, 255, 122, 0.15);
-    backdrop-filter: blur(14px);
+    box-shadow: 0 0px 60px rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(50px);
     transition-duration: .3s;
 }
 
 
 .graph-div:hover {
-  text-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.25);
   transition-duration: .3s;
   transition-timing-function: ease;
 }
